@@ -7,10 +7,49 @@
 #define TFT_RST        D4 // define Pin D4 as Reset
 #define TFT_DC         D8 // define Pin D8 as DC
 
+// create instance of Adafruit_ST7735 class
+
+Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
+
+// forward declarations of functions
+void tftPrintTest();
+void tftDrawFrame();
+void tftDrawLabels();
+
+
 void setup() {
-  // put your setup code here, to run once:
+ 
+ // Use this initializer if using a 1.8" TFT screen:
+tft.initR(INITR_BLACKTAB);      // Init ST7735S chip, black tab
+
+tftDrawFrame();
+tftDrawLabels();
+delay(1000);
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+
+delay(500);
+
+}
+
+void tftDrawFrame() 
+{
+tft.fillScreen(ST77XX_BLACK);
+tft.drawRoundRect(1, 0, tft.width()-1, 30, 10, ST77XX_BLUE);
+tft.drawRoundRect(1, 35, tft.width()-1, 90, 10, ST77XX_GREEN);
+tft.drawRoundRect(1, 130, tft.width()-1, 30, 10, ST77XX_RED);
+}
+
+void tftDrawLabels()
+{
+tft.setTextColor(ST77XX_WHITE);
+tft.setCursor(10,40);
+tft.setTextSize(1);
+tft.print("Temperatur in ");
+tft.setTextSize(0);
+tft.print("O");
+tft.setTextSize(1);
+tft.print("C");
 }
