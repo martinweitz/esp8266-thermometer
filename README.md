@@ -11,4 +11,5 @@ This project is for tinkering with ESP8266, teaching myself how to use Visual St
 # Software used
 - Visual Studio Code
 - PlatformIO
-
+- [Adafruit-ST7735-Library] (https://github.com/adafruit/Adafruit-ST7735-Library)
+- [Adafruit-GFX-Library] (https://github.com/adafruit/Adafruit-GFX-Library)
