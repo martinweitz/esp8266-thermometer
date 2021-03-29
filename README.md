@@ -9,6 +9,6 @@ This project is for tinkering with ESP8266, teaching myself how to use Visual St
 - 1.8 128x160 TFT Display SPI
 
 # Software used
-Visual Studio Code
-PlatformIO
+- Visual Studio Code
+- PlatformIO
 
