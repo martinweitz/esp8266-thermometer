@@ -11,5 +11,7 @@ This project is for tinkering with ESP8266, teaching myself how to use Visual St
 # Software used
 - Visual Studio Code
 - PlatformIO
-- [Adafruit-ST7735-Library] (https://github.com/adafruit/Adafruit-ST7735-Library)
-- [Adafruit-GFX-Library] (https://github.com/adafruit/Adafruit-GFX-Library)
+- [Adafruit-ST7735-Library](https://github.com/adafruit/Adafruit-ST7735-Library)
+- [Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library)
+- [Arduino-Temperature-Control-Library](https://github.com/milesburton/Arduino-Temperature-Control-Library)
+- [OneWire](https://github.com/PaulStoffregen/OneWire)
